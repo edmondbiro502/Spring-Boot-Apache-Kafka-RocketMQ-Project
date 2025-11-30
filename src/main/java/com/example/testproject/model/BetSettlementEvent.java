@@ -5,6 +5,8 @@ import lombok.Data;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
+import java.math.BigDecimal;
+
 @Getter
 @Data
 @RequiredArgsConstructor
@@ -13,7 +15,7 @@ public class BetSettlementEvent {
     private Long betId;
     private Long userId;
     private String eventId;
-    private Integer eventMarketID;
-    private Integer eventWinnerId;
-    private java.math.BigDecimal betAmount;
+    private String eventMarketID;
+    private String eventWinnerId;
+    private BigDecimal betAmount;
 }
