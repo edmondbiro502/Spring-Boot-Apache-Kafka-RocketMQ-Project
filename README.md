@@ -14,7 +14,7 @@ This service demonstrates event publishing and processing using Spring Boot, Apa
 
 ### Running the Application
 
-1. In the project root directory, run: **`docker compose up`**
+#### 1. In the project root directory, run:   **`docker compose up`**
    
 This will start the following services:
 - **Zookeeper**: Runs on port 2181 for Kafka coordination.
@@ -25,7 +25,7 @@ This will start the following services:
 - **RocketMQ Namesrv**: Runs on port 9876, provides name service for RocketMQ.
 - **RocketMQ Broker**: Runs on ports 10909 and 10911, handles RocketMQ messaging, depends on Namesrv.
 
-2. Start the Spring Boot application: ./gradlew bootRun
+#### 2. Start the Spring Boot application: **`./gradlew bootRun`**
 
 ## API Reference
 
