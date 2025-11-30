@@ -14,21 +14,21 @@ import lombok.Data;
 public class Bet {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "betId")
+    @Column(name = "bet_id")
     private Long betId;
 
-    @Column(name = "userId", nullable = false)
+    @Column(name = "user_id", nullable = false)
     private Long userId;
 
-    @Column(name = "eventId", nullable = false)
+    @Column(name = "event_id", nullable = false)
     private String eventId;
 
-    @Column(name = "eventMarketID", nullable = false)
-    private Integer eventMarketID;
+    @Column(name = "event_market_id", nullable = false)
+    private String eventMarketID;
 
-    @Column(name = "EVENTWINNERID", nullable = false)
-    private Integer eventWinnerId;
+    @Column(name = "event_winner_id", nullable = false)
+    private String eventWinnerId;
 
-    @Column(name = "betAmount", nullable = false, precision = 12, scale = 2)
+    @Column(name = "bet_amount", nullable = false, precision = 12, scale = 2)
     private java.math.BigDecimal betAmount;
 }
